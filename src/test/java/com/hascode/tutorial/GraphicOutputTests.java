@@ -7,8 +7,12 @@ import org.junit.Test;
 
 import com.carrotsearch.junitbenchmarks.BenchmarkOptions;
 import com.carrotsearch.junitbenchmarks.BenchmarkRule;
+import com.carrotsearch.junitbenchmarks.annotation.AxisRange;
+import com.carrotsearch.junitbenchmarks.annotation.BenchmarkMethodChart;
 
-public class SomeTest {
+@AxisRange(min = 0, max = 1)
+@BenchmarkMethodChart(filePrefix = "benchmark-lists")
+public class GraphicOutputTests {
 	ClassUnderTest classUnderTest = new ClassUnderTest();
 
 	@Rule
