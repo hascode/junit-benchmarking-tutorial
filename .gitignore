@@ -3,3 +3,4 @@
 .settings
 target
 infinitest.filters
+.benchmarks.h2.db
